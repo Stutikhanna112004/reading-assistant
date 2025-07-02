@@ -26,14 +26,9 @@ Tab, Enter: Navigate and activate
          Layer                                        	Tech
 🧠 Backend	                 :                  Python, Flask, pyttsx3, gTTS, langdetect
 🎨 Frontend	                 :                   HTML, CSS, JavaScript
-🔁 Communication	         :                   REST API (/speak), JSON, CORS
-🎧 Audio Playback	         :                   playsound (local)
-📦 Deployment Ready	         :                   Flask App with venv
-
-How to Run Locally
-Clone the repo:
-git clone https://github.com/your-username/accessible-reading-assistant
-cd accessible-reading-assistant
+🔁 Communication	                 :                   REST API (/speak), JSON, CORS
+🎧 Audio Playback	                 :                   playsound (local)
+📦 Deployment Ready	        :                   Flask App with venv
 
 Set up virtual environment:
 python -m venv venv
