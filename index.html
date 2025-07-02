@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accessible Reading Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main role="main">
+    <h1>🦯 Accessible Reading Assistant</h1>
+
+    <label for="textInput" id="textLabel">Enter Text or Upload:</label>
+    <textarea
+      id="textInput"
+      rows="5"
+      aria-labelledby="textLabel"
+      aria-describedby="instructions"
+    ></textarea>
+
+    <input
+      type="file"
+      id="fileInput"
+      accept=".txt"
+      aria-label="Upload text file to read"
+    />
+
+    <!--<label for="languageSelect">Language:</label>
+<select id="languageSelect" aria-label="Select language">
+  <option value="en">English</option>
+  <option value="hi">Hindi</option>
+  <option value="fr">French</option>
+  <option value="es">Spanish</option>
+  <option value="de">German</option>
+</select>-->
+
+    <div style="margin-top: 1rem;">
+      <button id="readBtn" aria-label="Read the text aloud (Alt+R)">🔊 Read Aloud</button>
+      <button id="toggleContrast" aria-label="Toggle high contrast mode (Alt+C)">🌓 High Contrast</button>
+    </div>
+
+    <p id="status" aria-live="polite" style="margin-top: 1rem;"></p>
+
+    <p id="instructions" style="font-size: 0.9em; margin-top: 2rem;">
+      <strong>Keyboard Shortcuts:</strong><br />
+      Alt + R: Read text aloud<br />
+      Alt + C: Toggle high contrast mode<br />
+      Tab: Move between inputs, Enter: Activate button
+    </p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
